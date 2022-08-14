@@ -1,0 +1,19 @@
+/* Font Import */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(185, 75%, 39%);
+    font-family: monospace;
+}
+
+.container {
+    width: 100%;
+}

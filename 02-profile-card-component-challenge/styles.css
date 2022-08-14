@@ -1,15 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@400;700&display=swap");
+
+/* Font Import */
+
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
-    font-family: "Kumbh Sans", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-body {}
+h1 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(185, 75%, 39%);
+    font-family: "Kumbh Sans", sans-serif;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
 
 .container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -17,7 +33,58 @@ body {}
 }
 
 .content {
-    height: 70%;
-    width: 80%;
-    background-color: blue;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 5rem;
+    height: 5rem;
+    border: 4px solid whitesmoke;
+    border-radius: 50%;
+    margin-top: -49px;
+}
+
+
+/* To make some padding in bio content and add slight border at bottom */
+
+.bio {
+    padding: 1.5em;
+    border-bottom: 1px solid hsla(0, 15%, 95%, 0.644);
+}
+
+span {
+    margin-left: 0.4rem;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+p {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+/* Working on fearures and stats */
+
+.features {
+    padding: 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 375px) {
+    .wrapper {
+        width: 90%;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 12px;
+    }
 }
