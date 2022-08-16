@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 420px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/****************************************************
+
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+
+ Typography *********************************/
+
+h3 {
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0.4em 0;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(226, 10%, 57%);
+    padding: 0.5em;
+}
+
+
+/* Handeling image */
+
+.img-container {
+    width: 50%;
+    height: 100%;
+    background-image: url("./images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content {
+    width: 50%;
+    padding: 0 1em;
+    top: 0;
+}
+
+.price-container {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-price {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding-bottom: 0.5rem;
+}
+
+.discount-price {
+    color: hsl(226, 10%, 57%);
+    font-family: "Fraunces", serif;
+    font-weight: 0;
+    font-size: 0.8em;
+}
+
+.btn-container {
+    text-align: center;
+    background-color: hsl(158, 36%, 37%);
+    color: whitesmoke;
+    padding: 0.8em 0;
+    border-radius: 0.6rem;
+    margin-top: 1.5em;
+    cursor: pointer;
+}
+
+.btn-container:hover {
+    background-color: hsl(159, 67%, 11%);
+}
+
+.btn-container img {
+    margin-right: 0.6em;
+}
+
+@media screen and (max-width: 512px) {
+    .card-component {
+        width: 100%;
+        flex-direction: column;
+        margin: 2rem 1rem;
+        min-height: 90vh;
+    }
+    .img-container {
+        width: 100% !important;
+        background-image: url("./images/image-product-desktop.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .content {
+        width: 100%;
+        height: auto;
+        padding: 1em 1em;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+}
