@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* font-family: 'Big Shoulders Display', cursive;
+
+
+
+font-family: 'Lexend Deca', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em 0;
+    border-radius: 0.8rem;
+}
+
+.left-card,
+.middle-card,
+.right-card {
+    width: 100%;
+    padding: 3em;
+}
+
+.left-card {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.middle-card {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.right-card {
+    border-radius: 0 0 0.6rem 0.6rem;
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+/**************************************************************
+                       Typography ***********************/
+
+.car-heading {
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding: 1em 0;
+}
+
+.car-info {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-top: 0.8em;
+    font-size: 1.2rem;
+}
+
+.btn-container {
+    width: 12rem;
+    text-align: center;
+    margin-top: 3em;
+    padding: 1.2em 1.5em;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 2rem;
+}
+
+.btn-container button {
+    border: none;
+}
+
+.left-btn button {
+    color: hsl(31, 77%, 52%);
+}
+
+.middle-btn button {
+    color: hsl(184, 100%, 22%);
+}
+
+.right-btn button {
+    color: hsl(179, 100%, 13%);
+}
+
+
+/* For desltop size screem */
+
+@media screen and (min-width: 680px) {
+    .wrapper {
+        width: 80%;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1em 0;
+        border-radius: 0.8rem;
+    }
+    .left-card,
+    .middle-card,
+    .right-card {
+        width: 30%;
+        padding: 3em 1.5em;
+    }
+    .left-card {
+        border-radius: 0.6rem 0 0 0.6rem;
+    }
+    .right-card {
+        border-radius: 0 0.6rem 0.6rem 0;
+    }
+    .btn-container {
+        max-width: 65%;
+        margin-top: 5em;
+        padding: 1em 1.5em;
+        background-color: hsl(0, 0%, 95%);
+        text-align: center;
+        border-radius: 2rem;
+        font-size: 0.8rem;
+    }
+}
