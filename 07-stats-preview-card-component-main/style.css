@@ -1,0 +1,148 @@
+/* importing fonts  */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+/* font-family: 'Inter', sans-serif; 
+font-family: 'Lexend Deca', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+
+/* Mobile First Approach */
+
+.stats-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.stats-card {
+    background-color: hsl(244, 38%, 16%);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 4em 2em;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.img-cintainer {
+    max-width: 100%;
+    min-height: 35vh;
+    background-repeat: no-repeat;
+    background-image: url("./images/image-header-mobile.jpg");
+    background-size: cover;
+    background-position: center 0;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 81%, 40%);
+    opacity: 0.6;
+}
+
+.content {
+    text-align: center;
+    padding: 1em 2em;
+}
+
+
+/****************************** Typography  
+                                            ************************************/
+
+.heading {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    margin-top: 1em;
+}
+
+.heading span {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    color: hsl(277, 64%, 61%);
+}
+
+.details {
+    font-family: "Lexend Deca", sans-serif;
+    padding-top: 1.5em;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    justify-content: space-evenly;
+    row-gap: 3em;
+}
+
+.features h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+}
+
+.features p {
+    margin-top: 0.2em;
+    text-transform: uppercase;
+    font-family: "Lexend Deca", sans-serif;
+    padding-top: 0.2em;
+    font-size: 0.8rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+/* To make responsive to large size device  */
+
+@media screen and (min-width: 756px) {
+    .stats-card {
+        flex-direction: row-reverse;
+        width: 70%;
+        border-radius: 1.5rem;
+    }
+    .img-cintainer {
+        width: 50%;
+        min-height: 70vh;
+        background-image: url("./images/image-header-desktop.jpg");
+        position: relative;
+    }
+    .content {
+        text-align: left;
+        width: 50%;
+        padding: 3em 2em;
+    }
+    .heading {
+        font-size: 2.5rem;
+    }
+    .heading span {
+        font-size: 2.5rem;
+    }
+    .details {
+        font-size: 1.2rem;
+        padding-top: 2.5em;
+    }
+    .features {
+        flex-direction: row;
+        padding: 2em 0;
+        justify-content: space-around;
+        text-align: center;
+        column-gap: 0.5em;
+        position: relative;
+        top: 50px;
+    }
+    .features h1 {
+        font-size: 2rem;
+    }
+}
