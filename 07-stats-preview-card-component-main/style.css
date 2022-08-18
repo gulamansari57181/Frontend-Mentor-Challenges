@@ -110,11 +110,12 @@ font-family: 'Lexend Deca', sans-serif; */
     .stats-card {
         flex-direction: row-reverse;
         width: 70%;
+        height: 50%;
         border-radius: 1.5rem;
     }
     .img-cintainer {
         width: 50%;
-        min-height: 70vh;
+        min-height: 40vh;
         background-image: url("./images/image-header-desktop.jpg");
         position: relative;
     }
