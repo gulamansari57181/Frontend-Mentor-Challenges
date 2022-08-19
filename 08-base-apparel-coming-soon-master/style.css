@@ -3,55 +3,87 @@
 /* font-family: 'Josefin Sans', sans-serif; */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background: rgb(0 100 0/0.5) !important; */
 }
 
 .container {
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgb(246, 243, 249);
+  overflow: hidden !important;
+  max-width: 100vw;
+  min-height: 100vh;
+  /* background-color: rgb(112, 12, 211); */
 }
 
 .logo-cintainer {
-    padding: 2em 1em;
+  padding: 2em 1em;
 }
 
 .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .img-container {
-    background-image: url("./images/hero-mobile.jpg");
-    width: 100%;
-    min-height: 55vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+  background-image: url("./images/hero-mobile.jpg");
+  width: 100%;
+  min-height: 55vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .content {
-    text-align: center;
-    padding: 2em 1em;
+  text-align: center;
+  padding: 2em 1.5em;
 }
-
 
 /***************************
 ************* Typography ***********/
 
 .heading {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 3.6rem;
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    padding-bottom: 1em;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
 }
 
 .heading span {
-    color: hsl(0, 36%, 70%);
-    font-weight: 300;
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+.greet-message {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  color: hsl(0, 36%, 70%);
+  margin-top: 1.5em;
+}
+
+.btn-container input {
+  margin-top: 5em;
+  width: 80%;
+  padding: 1em 2em;
+  text-align: start;
+  border: 0.1rem solid hsl(0, 36%, 70%);
+  border-radius: 2rem;
+}
+
+.arrow-icon {
+  position: relative;
+  right: 2.8rem;
+  top: 1.2em;
+  /* height: 100%; */
+  width: 2.3rem;
+  padding: 1.9vmin;
+  background-color: hsl(0, 36%, 70%);
+  border-radius: 10rem;
+}
+
+::placeholder {
+  color: hsl(0, 36%, 70%);
 }
