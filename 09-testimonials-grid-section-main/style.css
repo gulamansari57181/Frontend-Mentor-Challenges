@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+/* 
+Design guide:
+
+font-family: 'Barlow Semi Condensed', sans-serif; 
+
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+
+/* main-container */
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.grid-testimonial {
+    min-height: 100vh;
+    width: 100%;
+    padding: 1em 4em;
+    background-color: hsl(210, 46%, 95%);
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+/* To position last tetimonial smartly */
+
+.testimonial:last-child {
+    grid-column: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+/* Start Intro section: profile image and designation */
+
+.intro {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border: 2px solid hsl(210, 46%, 95%);
+    border-radius: 50%;
+}
+
+.title {
+    padding-left: 2em;
+}
+
+
+/* End Intro section: profile image and designation */
+
+
+/************************** Typography 
+********************************************************************/
+
+.title h4 {
+    padding: 0.2rem 0;
+    color: hsl(0, 0%, 81%);
+    font-weight: 500;
+}
+
+.title h5 {
+    color: hsl(0, 0%, 81%, 0.5);
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.testimonal-title {
+    margin-top: 1em;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    margin-top: 1em;
+    color: hsl(0, 0%, 81%, 0.4);
+    line-height: 1.5;
+}
+
+
+/* first testimonial */
+
+.bg-purple-grid {
+    background-color: hsl(263, 55%, 52%);
+    padding: 2em;
+    border-radius: 1.5rem;
+    /* For Quotations icon */
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 5%;
+}
+
+article {
+    padding: 2em;
+    border-radius: 1.5rem;
+}
+
+
+/* Second testimonial */
+
+.bg-grey-grid {
+    background-color: hsl(217, 19%, 35%);
+}
+
+
+/* Third testimonial */
+
+.bg-white-grid {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.bg-white-grid .testimonal-title {
+    color: hsl(219, 29%, 14%);
+}
+
+.bg-white-grid p,
+h4 {
+    color: hsl(219, 29%, 14%, 0.6);
+}
+
+
+/* Fourth Testimonial */
+
+.bg-dark-grey-grid {
+    background-color: hsl(219, 29%, 14%);
+}
+
+
+/* To make mobile responsive */
+
+@media screen and (max-width: 912px) {
+    .grid-testimonial {
+        display: flex;
+        flex-direction: column;
+        padding: 3em 1.5em;
+    }
+}
