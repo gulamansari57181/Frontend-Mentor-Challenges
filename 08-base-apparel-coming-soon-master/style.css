@@ -11,6 +11,10 @@
 .container {
     max-width: 100vw;
     min-height: 100vh;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-position: -35em;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .logo-cintainer {
