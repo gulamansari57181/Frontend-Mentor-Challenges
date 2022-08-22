@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+/* font-family: 'Karla', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.price-section-container {
+    width: 80%;
+    margin: auto 0;
+    background-color: blueviolet;
+}
