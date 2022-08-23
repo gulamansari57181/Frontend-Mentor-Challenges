@@ -9,7 +9,128 @@
 }
 
 .price-section-container {
-    width: 80%;
-    margin: auto 0;
-    background-color: blueviolet;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.grid {
+    padding: 2em;
+    font-family: "Karla", sans-serif;
+}
+
+.wrapper {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+
+/* Mobile first Design */
+
+.content-section {
+    background-color: #ffff;
+}
+
+.price-section {
+    background-color: hsl(179, 62%, 43%);
+    color: #ffff;
+}
+
+.why-us-section {
+    background-color: hsl(179, 62%, 43%, 0.8);
+    color: hsl(203, 44%, 93%);
+}
+
+
+/***********************************************************
+*************************** Typography *****************/
+
+.heading {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    letter-spacing: 1.2;
+}
+
+.sub-heading {
+    padding: 1em 0;
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.description {
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+}
+
+.sub-heading-price {
+    font-size: 1.2rem;
+}
+
+.price-container {
+    max-width: 80%;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+h6 {
+    color: hsla(203, 44%, 93%, 0.39);
+    font-size: 1rem;
+}
+
+.price-tagline {
+    padding-top: 0.5em;
+    color: hsl(203, 44%, 93%);
+}
+
+.btn-container button {
+    margin-top: 2em;
+    background-color: hsl(71, 73%, 54%);
+    width: 100%;
+    padding: 0.8em;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-container {
+    border-radius: 1px solid hsl(24, 93%, 49%);
+}
+
+.sub-heading-why-us {
+    color: #ffff;
+    font-size: 1.2rem;
+}
+
+.features {
+    margin-top: 2em;
+    list-style: none;
+}
+
+
+/* Media query  */
+
+@media screen and (max-width: 712px) {
+    .wrapper {
+        margin: 2em 0;
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    .grid-col-span-2 {
+        grid-column: span 1;
+    }
 }
