@@ -1,0 +1,102 @@
+/* 
+////// For this challenge ///////
+
+- You will have to modify the HTML
+
+- You can add new classes in the HTML
+  if you need to
+
+// Requirements
+1. The headings in the first row must be
+   a different color
+2. The two .col at the bottom must go next
+   to one another
+3. The section at the bottom should have
+   a dark background color and a different
+   color of text
+4. I've removed the "gap" that I created,
+   so you'll have to add it back in
+
+   */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    color: #87629a;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.col {
+    /* these are now flex items */
+    width: 100%;
+    padding: 3em 1em;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: #23424a;
+    color: #fff;
+}
+
+.hero__text {
+    width: 60%;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #23424a;
+    font-weight: 900;
+    background-color: #38cfd9;
+    padding: 0.75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.75;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #136c72;
+    color: #fff;
+}
+
+.footer .col {
+    max-width: 40%;
+}
